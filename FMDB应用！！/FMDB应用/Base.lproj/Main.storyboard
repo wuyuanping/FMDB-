@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gaU-M3-WTy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="QmK-zx-hdM">
+            <objects>
+                <tableViewController id="RpO-Tt-M0e" customClass="ViewController" customModule="FMDB应用" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="223" sectionHeaderHeight="28" sectionFooterHeight="28" id="9sm-GZ-Hxd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="item" rowHeight="223" id="Zf3-Ci-huP" customClass="CustomCell" customModule="FMDB应用" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="223"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zf3-Ci-huP" id="a9o-Rd-dYw">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RjK-aD-pit">
+                                            <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="f36-jZ-WY0"/>
+                                                <constraint firstAttribute="height" constant="50" id="gWj-zF-aVt"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxD-kI-Cig">
+                                            <rect key="frame" x="80" y="10" width="35" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Ekg-v0-9iC"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-11-10 20:21:05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbG-iO-rFh">
+                                            <rect key="frame" x="80" y="36" width="117" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="CjA-l2-zXD"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mr-cv-zYD">
+                                            <rect key="frame" x="10" y="70" width="355" height="142.5"/>
+                                            <string key="text">我有两个哥们，去酒吧钓美女，其中一个装成大款的样子，在酒吧泡到妹子以后，勾着两个妹子走出酒吧就往一辆跑车走去，另一个急忙说，张总，别别，你都喝多了，别开车了，坐我的车吧~！一边说一边拉着他走到奇瑞旁边，结果那两个妹子也跟着进了奇瑞。其实他们就是开的奇瑞去的。</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RjK-aD-pit" firstAttribute="top" secondItem="a9o-Rd-dYw" secondAttribute="top" constant="10" id="1kc-cD-I1Z"/>
+                                        <constraint firstItem="3mr-cv-zYD" firstAttribute="top" secondItem="RjK-aD-pit" secondAttribute="bottom" constant="10" id="3Pc-5t-kcN"/>
+                                        <constraint firstItem="oxD-kI-Cig" firstAttribute="leading" secondItem="RjK-aD-pit" secondAttribute="trailing" constant="20" id="7ro-By-FPE"/>
+                                        <constraint firstItem="3mr-cv-zYD" firstAttribute="leading" secondItem="a9o-Rd-dYw" secondAttribute="leadingMargin" constant="2" id="JQZ-c9-rBa"/>
+                                        <constraint firstItem="hbG-iO-rFh" firstAttribute="top" secondItem="oxD-kI-Cig" secondAttribute="bottom" constant="5" id="PlE-Eq-o3y"/>
+                                        <constraint firstItem="oxD-kI-Cig" firstAttribute="top" secondItem="a9o-Rd-dYw" secondAttribute="top" constant="10" id="WLV-PY-9Vd"/>
+                                        <constraint firstItem="RjK-aD-pit" firstAttribute="leading" secondItem="a9o-Rd-dYw" secondAttribute="leading" constant="10" id="bjF-8R-qUJ"/>
+                                        <constraint firstItem="hbG-iO-rFh" firstAttribute="leading" secondItem="RjK-aD-pit" secondAttribute="trailing" constant="20" id="enZ-zg-Ceo"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="3mr-cv-zYD" secondAttribute="trailing" constant="2" id="xFa-H6-HnS"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="createTime" destination="hbG-iO-rFh" id="uKx-pL-TO3"/>
+                                    <outlet property="detail" destination="3mr-cv-zYD" id="ZuZ-ql-gHH"/>
+                                    <outlet property="iconV" destination="RjK-aD-pit" id="bS4-Hc-o3Z"/>
+                                    <outlet property="titleLabel" destination="oxD-kI-Cig" id="15l-Qw-UMC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RpO-Tt-M0e" id="ACs-Ad-4lX"/>
+                            <outlet property="delegate" destination="RpO-Tt-M0e" id="5Sn-37-ROv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="5cU-k5-hrt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7UH-sV-Q9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="546.39999999999998" y="143.47826086956522"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="56S-mk-g61">
+            <objects>
+                <navigationController id="gaU-M3-WTy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MEx-03-Fy3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RpO-Tt-M0e" kind="relationship" relationship="rootViewController" id="U7D-up-kZm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ktd-wz-CPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-406" y="144"/>
+        </scene>
+    </scenes>
+</document>
